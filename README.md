@@ -26,7 +26,7 @@ On your terminal:
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://emiliazm.github.io/todoList/)
+[Live Demo Link](https://emiliazm.github.io/review-todo/)
 
 
 
