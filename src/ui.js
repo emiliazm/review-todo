@@ -70,9 +70,9 @@ const uiCreateTask = (task) => {
   tasks.sort((a, b) => a.index - b.index);
   const ulList = document.querySelector('.check-list');
   const insideUl = `
-  <input id="ck-${task.id}" class="check-box" type="checkbox" name="checkBox">
-  <label class="lb-task" id="lb-${task.id}" for="ta-${task.id}">${task.description}</label>
-  <textarea id="ta-${task.id}" class="ta-task" name="edit-task">${task.description}</textarea>
+  <input class="check-box" type="checkbox" name="checkBox">
+  <label class="lb-task" for="ta-${task.id}">${task.description}</label>
+  <textarea class="ta-task" name="edit-task">${task.description}</textarea>
   <span class="dots material-symbols-outlined">more_vert</span>
   <span class="trash material-symbols-outlined">delete</span>
   `;
