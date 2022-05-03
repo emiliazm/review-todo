@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books with ES6.
+# To do List.
 
 > Hello!
 To do list is a single page website that allows you create a to do list. Re-creating this website you will learn how to give some functionality to your sections and make your website more user-interactive. Apart from creating and display a list you will learn how to set and get items from local storage and how to use ES6 and webpack.
