@@ -26,13 +26,13 @@ export const setTasks = (pTasks) => {
 
 export const addTask = (task) => {
   tasks.push(task);
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  setTasks(tasks);
 };
 
 export const updateTask = (taskId, newValue) => {
   const task = tasks.find((e) => e.id === Number(taskId));
   task.description = newValue;
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  setTasks(tasks);
 };
 
 export const deleteTask = (taskId) => {
@@ -40,17 +40,17 @@ export const deleteTask = (taskId) => {
   tasks.forEach((e, i) => {
     tasks[i].index = i + 1;
   });
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  setTasks(tasks);
 };
 
 export const checkStatus = (taskId) => {
   const task = tasks.find((e) => e.id === Number(taskId));
   task.isCompleted = !task.isCompleted;
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  setTasks(tasks);
 };
 
 export const clearAllBtn = () => {
   const cleared = tasks.filter((task) => !task.isCompleted);
   tasks = cleared.map((task, i) => ({ ...task, index: i + 1 }));
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  setTasks(tasks);
 };
