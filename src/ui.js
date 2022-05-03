@@ -120,10 +120,10 @@ const uiAdd = (e) => {
   inputElement.focus();
 };
 
-function displayTasks() {
+const displayTasks = () => {
   const tasks = getTasks();
   tasks.forEach((task) => uiCreateTask(task));
-}
+};
 
 export default function setup() {
   loadTasks();
